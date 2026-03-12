@@ -48,6 +48,7 @@
             ...extra,
         });
 
+        /* SLIDE 1 */
         function HeroSlide({ visible }) {
             return (
                 <div style={{ textAlign:"center", maxWidth:760 }}>
@@ -73,6 +74,7 @@
             );
         }
 
+        /* SLIDE 2 */
         const commsCards = [
             { n:"01", label:"Claro", icon:"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5", desc:"Sin ambigüedades" },
             { n:"02", label:"Comprensible", icon:"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z", desc:"Para tu audiencia" },
@@ -106,6 +108,7 @@
             );
         }
 
+        /* SLIDE 3 */
         function ClaridadSlide({ visible }) {
             const items = [{ label:"Oraciones cortas" }, { label:"Sin tecnicismos innecesarios" }, { label:"Una idea por párrafo" }, { label:"Las pausas" }];
             return (
@@ -124,6 +127,7 @@
             );
         }
 
+        /* SLIDE 4 */
         const verbalItems = [
             { icon:"M10 5v6a2 2 0 0 0 4 0V5 M12 13v8 M17 6c1.5 1.5 1.5 4.5 0 6 M20.5 3c3 3 3 9 0 12 M7 6c-1.5 1.5-1.5 4.5 0 6 M3.5 3c-3 3-3 9 0 12", label:"Tono", sub:"Adecuado al contexto", num:"01", ani: "ani-vibrate" },
             { icon:"M12 2v20 M9 5v14 M15 5v14 M6 9v6 M18 9v6 M3 11v2 M21 11v2", label:"Ritmo", sub:"Ni muy rápido, ni lento", num:"02", ani: "ani-beat" },
@@ -151,6 +155,7 @@
             );
         }
 
+        /* SLIDE 5 */
         const nonVerbalItems = [
             { n:"01", icon:"M12 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4 M12 9v6 M9 21l3-6 3 6 M12 11l-3 2 1.5 2 M12 11l3 2-1.5 2 M12 1v2M11 2h2 M7.5 3v1.5M6.75 3.75h1.5 M16.5 3v1.5M15.75 3.75h1.5 M5 18A8.5 8.5 0 0 1 5 6 M19 18A8.5 8.5 0 0 0 19 6", label:"Postura", color:C.rose, desc: "Presencia física" },
             { n:"02", icon:"M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8zM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z", label:"Contacto visual", color:"#a09de0", desc: "Conexión con otros" },
@@ -187,6 +192,7 @@
             );
         }
 
+        /* SLIDE 6 */
         function BreathingSlide({ visible }) {
             const [running, setRunning] = useState(false);
             const [phaseIdx, setPhaseIdx] = useState(0);
@@ -228,6 +234,7 @@
             );
         }
 
+        /* SLIDE 7 */
         function ReencuadreSlide({ visible }) {
             const rawIdeas = [{ t: "square", x: 85, y: 15, s: 12, r: 15, c: C.violet, o: 0.5 }, { t: "circle", x: 160, y: -5, s: 14, r: 0, c: C.rose, o: 0.8 }, { t: "square", x: 250, y: 15, s: 16, r: 45, c: C.text, o: 0.4 }, { t: "square", x: 120, y: 55, s: 18, r: -10, c: C.rose, o: 0.6 }, { t: "circle", x: 220, y: 65, s: 14, r: 0, c: C.violet, o: 0.7 }, { t: "square", x: 170, y: 80, s: 12, r: 45, c: C.rose, o: 0.9 }, { t: "square", x: 205, y: 105, s: 14, r: 20, c: C.text, o: 0.5 }, { t: "circle", x: 150, y: 120, s: 10, r: 0, c: C.violet, o: 0.8 }, { t: "circle", x: 170, y: 175, s: 8, r: 0, c: C.text, o: 1, glow: true }];
             return (
@@ -270,6 +277,7 @@
             );
         }
 
+        /* SLIDE 8 */
         function QuoteSlide({ visible }) {
             return (
                 <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", position:"relative" }}>
@@ -288,6 +296,7 @@
             );
         }
 
+        /* SLIDE 9 */
         function FinaleSlide({ visible }) {
             return (
                 <div style={{ textAlign:"center", maxWidth:850 }}>
@@ -297,11 +306,12 @@
             );
         }
 
+        /* SLIDE 10 */
         function GraciasSlide({ visible }) {
             return (
                 <div style={{ textAlign:"center" }}>
                     <h1 style={{ ...a(0.2,visible), fontFamily:"Georgia,serif", fontSize:"clamp(48px,7vw,84px)", fontWeight:300, color:C.text }}>¡Muchas <em style={{ color:C.rose }}>gracias!</em></h1>
-                    <p style={{ ...a(0.4,visible), fontSize:18, color:C.muted, marginTop:30 }}>Por tu tiempo וatención.</p>
+                    <p style={{ ...a(0.4,visible), fontSize:18, color:C.muted, marginTop:30 }}>Por tu tiempo y atención.</p>
                 </div>
             );
         }
